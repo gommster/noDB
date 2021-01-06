@@ -1,43 +1,96 @@
+body {
+  background-image: url('./wall_brick_red_142654_1920x1080.jpg')
+}
+
 .App {
   text-align: center;
+}
+
+.Header{
+  background-image: url('./clipart702841.png');
+  background-size: 500px 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15%;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Header h1{
+  text-align: center ;
+  margin: 0;
 }
 
 .JokeSpace {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  height: 85%
 }
 
 .JokeFinder {
+  background-image: url('./PinClipart.com_marquee-clipart_24424.png');
+  background-size: 100% 100%;
+  background-color: white;
+  background-repeat: no-repeat;
   margin: 20px;
+  height: 80vh;
   width: 40vw;
+  padding: 40px;
+}
+
+.JokeFinder .foundJokes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 90%;
+}
+
+.JokeFinder h1{
+  height: 5%;
 }
 
 .JokeFinder .Joke {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 100px;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 
 .JokeFinder .Joke p{
-  width: 80%
+  width: 90%;
+  margin: 10px;
 }
 
 .JokeFinder button {
-  height: 70px;  
+  height: 80%;  
+  position: center;
 }
 
 .myJokes {
+  background-image: url('./PinClipart.com_marquee-clipart_24424.png');
+  background-size: 100% 100%;
+  background-color: white;
+  background-repeat: no-repeat;
   margin: 20px;
+  max-height: 80vh;
   width: 40vw;
-  height: 820px;
-  overflow: scroll;
+  padding: 40px;
+}
+.myJokes h1{
+  height:10%
+}
+
+.myJokes .jokeListContainer{
+  height: 90%
 }
 
 .editing, .displaying {
   display: flex;
   flex-direction: column;
+  margin-bottom: auto;
 }
 
 .editing textarea{
@@ -52,6 +105,7 @@
 
 .myJokes textarea{
   margin: 5px; 
+  min-height: 40px;
   height: auto;
   width: 80%;
 }
